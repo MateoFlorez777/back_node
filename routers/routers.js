@@ -1,0 +1,10 @@
+router.post('/crear',controllerInventario.saveInventario);
+router.delete('/inventario/:id',controllerInventario.deleteInventario);
+router.put('/inventario/:id',controllerInventario.updateInventario);
+router.post('/buscar/:id',controllerInventario.buscarData);
+router.post('/buscar/:id?',controllerInventario.listarAllData);
+const { Router } = require('express');
+ const router = Router();
+ export default router;
+ var controllerInventario=require('../controller/controllerInventario');
+ router.get('/prueba',controllerInventario);
